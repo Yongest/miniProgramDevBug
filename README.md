@@ -2,7 +2,7 @@
 
 ### 1.遮罩层遮盖不住textare ，点击遮罩层可以在文本域输入 ##
 
-### 2.指令不能用，过滤器需要使用 `.wxs` 文件写入 `<wxs module="common" src='../../utils/common.wxs'></wxs>  common.fixed(something)` ##
+### 2.指令不能用，过滤器需要使用 `.wxs` 文件,且`.wxs`文件中只能使用es2015语法，获取时间对象只能用getDate()，写入 `<wxs module="common" src='../../utils/common.wxs'></wxs>  common.fixed(something)` ##
 
 ### 3.部分css样式不能用 ##
 
@@ -31,7 +31,7 @@
 ### 15. 用户登录功能。
 ### 16. 获取data里面的数据，需要这样 `this.data.msg`,因为 `msg`没有赋值到根实例上面，而是放在data中。
 ### 17.app.wxss 不作用于独立包，组件。如组件中需要公共样式，需要使用 `@import '/app.wxss';` 导入
-### 18，wx:for  循环,默认值为item，索引为index,可以改变
+### 18，wx:for  循环,默认值为item，索引为index,可以改变，建议设置key，一般为两种方式wx:key="unique"或wx:key="*this"
 ### 19.函数调用传值不方便。只能写函数名，不能传值。
 
 ### 20.过滤器中，`string.substr(5,11)` 不起作用 替换方法，`string.substring()`
